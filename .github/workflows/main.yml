@@ -32,12 +32,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: 增加文件夹权限运行权限
-        run: chmod -R +x unixbench-5.1.2
+        run: chmod -R +x UnixBench
 
       # Runs a set of commands using the runners shell
       - name: 编译并测试
         run: |
-          cd unixbench-5.1.2
+          cd UnixBench
           make
           ./Run
           
